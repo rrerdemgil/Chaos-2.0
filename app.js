@@ -82,7 +82,7 @@ async function initPouch() {
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     host.append(renderer.domElement);
     const camera = new THREE.PerspectiveCamera(32, 1, .1, 100);
-    camera.position.set(0, 0, 8.4);
+    camera.position.set(0, 0, 3.2);
     scene.add(new THREE.HemisphereLight(0xffffff, 0x735280, 2.4));
     const key = new THREE.DirectionalLight(0xffffff, 2.5);
     key.position.set(-3, 5, 6);
