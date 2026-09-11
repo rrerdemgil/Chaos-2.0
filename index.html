@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CHAOS POUCH — Nice or Nasty?</title>
+    <meta name="description" content="Meet CHAOS POUCH: a nicotine-free mystery flavour pouch concept. Good flavours. Bad flavours. Absolutely no clues.">
+    <meta name="theme-color" content="#7228ef">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d3ff40'/%3E%3Ctext x='5' y='25' font-family='Arial' font-weight='900' font-size='26' fill='%23231532'%3EC%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="announcement">
+        <span>GOOD FLAVOURS. BAD FLAVOURS. ZERO CLUES.</span>
+        <span>NICOTINE-FREE POUCHES. CAN-CONTAINED CHAOS.</span>
+    </div>
+    <header class="nav">
+        <a href="#" class="brand" aria-label="Chaos Pouch home">
+            CHAOS
+            <br>
+            POUCH
+            <span>®</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#how">The challenge</a>
+            <a href="#flavours">The flavours</a>
+            <a href="#buy">The can</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="motion-toggle" aria-pressed="false" aria-label="Pause animation" title="Pause animation">Ⅱ</button>
+            <button id="open-bag" class="bag-button">
+                Bag 
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+    <main id="main">
+        <div class="journey" id="journey">
+            <div class="stage" id="stage">
+                <div class="pouch-halo" aria-hidden="true"></div>
+                <div id="pouch-view" tabindex="0" role="img" aria-label="Interactive 3D Chaos Pouch can. Drag horizontally or use left and right arrow keys to rotate." aria-describedby="spin-help">
+                    <img id="pouch-fallback" src="assets/can-lid.png" alt="CHAOS POUCH Nice or Nasty can lid design" width="1024" height="1024">
+                </div>
+                <div class="spin-controls">
+                    <span id="spin-help">DRAG TO SPIN</span>
+                    <button id="spin-pouch" aria-label="Spin the can one full turn">
+                        360° 
+                        <span aria-hidden="true">↻</span>
+                    </button>
+                </div>
+            </div>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">
+                        <span class="tiny-star" aria-hidden="true">✳</span>
+                         THE MYSTERY FLAVOUR POUCH CHALLENGE
+                    </p>
+                    <h1>
+                        NICE
+                        <br>
+                        <span class="or">OR</span>
+                        <br>
+                        <span class="savage">NASTY?</span>
+                    </h1>
+                    <p class="intro">
+                        One can. Ten flavours. Zero clues.
+                        <br>
+                        A nice little surprise. Or a nasty plot twist.
+                    </p>
+                    <a href="#buy" class="button lime">
+                        Meet your match 
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                    <div class="hero-note">
+                        MYSTERY FLAVOURS 
+                        <span>✳</span>
+                         MAXIMUM REACTIONS
+                    </div>
+                </div>
+                <div class="side-stamp" aria-hidden="true">
+                    NICE?
+                    <br>
+                    NASTY?
+                    <br>
+                    <b>YOU DECIDE.</b>
+                </div>
+                <div class="hero-bottom">
+                    <span>SCROLL FOR A LITTLE CHAOS</span>
+                    <span aria-hidden="true">↓</span>
+                    <span>01 / THE UNEXPECTED</span>
+                </div>
+            </section>
+            <section class="how" id="how">
+                <div class="how-copy">
+                    <p class="eyebrow">01 / HOW TO CAUSE CHAOS</p>
+                    <h2>
+                        LOOKS INNOCENT.
+                        <br>
+                        <span>TRUST NOTHING.</span>
+                    </h2>
+                    <p class="section-intro">
+                        Identical-looking pouches. Wildly different flavours.
+                        <br>
+                        The only way to find out? Take your pick.
+                    </p>
+                    <ol class="steps">
+                        <li>
+                            <span>01</span>
+                            <div>
+                                <h3>Pick your mystery.</h3>
+                                <p>One can. Twenty pouches. No flavour clues.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <div>
+                                <h3>Meet your flavour.</h3>
+                                <p>Strawberry cream or ketchup? Nice or nasty?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <div>
+                                <h3>Enjoy the reaction.</h3>
+                                <p>Get your friends in on the challenge.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+        <div class="marquee" aria-label="Good flavours. Bad decisions. Zero clues.">
+            <div aria-hidden="true">
+                <span>
+                    GOOD FLAVOURS. 
+                    <i>BAD DECISIONS.</i>
+                     ZERO CLUES. ✳ 
+                </span>
+                <span>
+                    GOOD FLAVOURS. 
+                    <i>BAD DECISIONS.</i>
+                     ZERO CLUES. ✳ 
+                </span>
+            </div>
+        </div>
+        <section class="flavours section" id="flavours">
+            <div class="section-top">
+                <p class="eyebrow">02 / FIVE PAIRINGS. TEN POSSIBILITIES.</p>
+                <span>NICE OR NASTY?</span>
+            </div>
+            <div class="flavour-heading">
+                <h2>
+                    SAME POUCH.
+                    <br>
+                    <em>PLOT TWIST.</em>
+                </h2>
+                <p>
+                    Five ways it could go right.
+                    <br>
+                    Five ways it could go very wrong.
+                </p>
+            </div>
+            <div class="duel-list">
+                <article class="duel">
+                    <div class="nice-flavour">
+                        <span class="duel-index">01</span>
+                        <div>
+                            <p class="pair-label">NICE</p>
+                            <h3>STRAWBERRY CREAM</h3>
+                        </div>
+                    </div>
+                    <span class="duel-or">OR</span>
+                    <div class="nasty-flavour">
+                        <p class="pair-label">NASTY</p>
+                        <h3>KETCHUP?</h3>
+                    </div>
+                </article>
+                <article class="duel">
+                    <div class="nice-flavour">
+                        <span class="duel-index">02</span>
+                        <div>
+                            <p class="pair-label">NICE</p>
+                            <h3>BLUE RASPBERRY</h3>
+                        </div>
+                    </div>
+                    <span class="duel-or">OR</span>
+                    <div class="nasty-flavour">
+                        <p class="pair-label">NASTY</p>
+                        <h3>BLUE CHEESE?</h3>
+                    </div>
+                </article>
+                <article class="duel">
+                    <div class="nice-flavour">
+                        <span class="duel-index">03</span>
+                        <div>
+                            <p class="pair-label">NICE</p>
+                            <h3>PEACH</h3>
+                        </div>
+                    </div>
+                    <span class="duel-or">OR</span>
+                    <div class="nasty-flavour">
+                        <p class="pair-label">NASTY</p>
+                        <h3>PICKLE?</h3>
+                    </div>
+                </article>
+                <article class="duel">
+                    <div class="nice-flavour">
+                        <span class="duel-index">04</span>
+                        <div>
+                            <p class="pair-label">NICE</p>
+                            <h3>VANILLA CUSTARD</h3>
+                        </div>
+                    </div>
+                    <span class="duel-or">OR</span>
+                    <div class="nasty-flavour">
+                        <p class="pair-label">NASTY</p>
+                        <h3>SOUR MILK?</h3>
+                    </div>
+                </article>
+                <article class="duel">
+                    <div class="nice-flavour">
+                        <span class="duel-index">05</span>
+                        <div>
+                            <p class="pair-label">NICE</p>
+                            <h3>CARAMEL</h3>
+                        </div>
+                    </div>
+                    <span class="duel-or">OR</span>
+                    <div class="nasty-flavour">
+                        <p class="pair-label">NASTY</p>
+                        <h3>GRAVY?</h3>
+                    </div>
+                </article>
+            </div>
+            <p class="flavour-foot">
+                LOOKALIKE POUCHES. NO FLAVOUR CLUES. 
+                <span>THAT’S THE WHOLE POINT.</span>
+            </p>
+        </section>
+        <section class="buy section" id="buy">
+            <div class="buy-copy">
+                <p class="eyebrow">03 / ONE CAN. ALL THE CHAOS.</p>
+                <h2>
+                    SMALL CAN.
+                    <br>
+                    <span>BIG</span>
+                    <br>
+                    REACTIONS.
+                </h2>
+                <p>The Original Chaos Can. Twenty nicotine-free flavour pouches, with five nice-or-nasty pairings in one round can.</p>
+                <div class="product-tags">
+                    <span>20 flavour pouches</span>
+                    <span>Nicotine free</span>
+                    <span>Round, reclosable can</span>
+                </div>
+            </div>
+            <div class="buy-panel">
+                <div class="product-number">
+                    THE ORIGINAL 
+                    <span>NO. 001</span>
+                </div>
+                <h3>
+                    CHAOS
+                    <br>
+                    STARTS HERE.
+                </h3>
+                <div class="purchase-row">
+                    <span class="price">£8.99</span>
+                    <div class="quantity" role="group" aria-label="Quantity">
+                        <button id="less" aria-label="Decrease quantity">−</button>
+                        <output id="quantity" aria-label="Selected quantity">1</output>
+                        <button id="more" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+                <button class="button dark" id="add-bag">
+                    Add to bag 
+                    <span aria-hidden="true">↗</span>
+                </button>
+                <p class="demo-note">Concept shop — try the bag. No payment is taken.</p>
+                <div class="buy-end">
+                    <span>GOOD FLAVOURS.</span>
+                    <span>BAD FLAVOURS.</span>
+                    <span>ZERO CLUES.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <a href="#" class="brand">
+                CHAOS
+                <br>
+                POUCH
+                <span>®</span>
+            </a>
+            <p>
+                POUCHES WITH
+                <br>
+                TRUST ISSUES.
+            </p>
+            <a href="#main" class="back-top">Back to top ↑</a>
+        </div>
+        <div class="footer-word" aria-hidden="true">EXPECT CHAOS.</div>
+        <div class="footer-bottom">
+            <span>© 2026 CHAOS POUCH</span>
+            <span>Nicotine-free novelty flavour pouch concept.</span>
+            <span>Product details and prices are illustrative.</span>
+        </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="bag" aria-labelledby="bag-title">
+        <div class="bag-head">
+            <h2 id="bag-title">YOUR BAG.</h2>
+            <button id="close-bag" aria-label="Close bag">×</button>
+        </div>
+        <div id="bag-content"></div>
+        <div class="bag-footer">
+            <p>This is a concept shop. Orders and payments are not available.</p>
+            <button id="continue-browsing" class="button lime">
+                Keep exploring 
+                <span aria-hidden="true">↗</span>
+            </button>
+        </div>
+    </dialog>
+</body>
+</html>
