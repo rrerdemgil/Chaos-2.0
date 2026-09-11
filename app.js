@@ -69,7 +69,7 @@ try {
     $('#pouch-fallback').hidden = false;
 }
 async function initPouch() {
-    const THREE = await import('./vendor/three.module.js');
+    const THREE = await import('./three.module.js');
     const host = $('#pouch-view'),
         scene = new THREE.Scene();
     const renderer = new THREE.WebGLRenderer({
